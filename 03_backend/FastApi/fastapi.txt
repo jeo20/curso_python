@@ -1,22 +1,23 @@
-instalar fastapi: pip install "fastapi[all]"
+INSTALAR
+    pip install "fastapi[all]" (instala fastapi y uvicorn para que funcione el servidor local)
+    crear un archivo main.py
 
-crear un archivo llamado main.py
-iniciar el servidor en la carpeta adonde se instalo FastApi: uvicorn main:app --reload
+INICIAR SERVIDOR
+    uvicorn main:app --reload (iniciar el servidor en la carpeta adonde se instalo FastApi)
+    Detener el server: CTRL+C
 
-
-Documentación con Swagger: http://127.0.0.1:8000/docs
-Documentación con Redocly: http://127.0.0.1:8000/redoc
-
-tipar todos los datos
+DOCUMENTACION
+    Documentación con Swagger: http://127.0.0.1:8000/docs
+    Documentación con Redocly: http://127.0.0.1:8000/redoc
 
 ROUTER
-******
-app.include_router(users.router) # Agrego la ruta de users a mi aplicacion principal (main).
+    app.include_router(users.router) # Agrego la ruta de users a mi aplicacion principal (main).
 
-from fastapi import APIRouter # importamos APIRouter desde el programa de la ruta (users, products).
+    from fastapi import APIRouter # importamos APIRouter desde el programa de la ruta (users, products).
 
-router = APIRouter () # Creamos una nueva instancia de APIRouter y le asignamos al nombre router.
+    router = APIRouter () # Creamos una nueva instancia de APIRouter y le asignamos al nombre router.
 
-router = APIRouter(prefix="/users", #  Establecemos el prefijo que tendrá esta ruta, es "/users"
-                   tags=["users"], #  Agregamos una etiqueta a este grupo de rutas, en este caso "products". Se utiliza para agrupar las rutas relacionadas
-                   responses={404: {"message": "No encontrado"}}) # mensaje de error con status code
+    router = APIRouter(prefix="/users", #  Establecemos el prefijo que tendrá esta ruta, es "/users"
+                   tags=["users"], #  Agregamos una etiqueta a este grupo de rutas, en este caso "products".
+                   Se utiliza para agrupar las rutas relacionadas responses={404: {"message": "No encontrado"}}) 
+                   # mensaje de error con status code
