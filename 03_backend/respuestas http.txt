@@ -1,7 +1,4 @@
-Códigos de estado de respuesta HTTP
-Los códigos de estado de respuesta HTTP indican si se ha completado satisfactoriamente una solicitud HTTP específica.
-
-Las respuestas se agrupan en cinco clases:
+Las respuestas HTTP se agrupan en cinco clases:
 
 Respuestas informativas (100–199)
 
