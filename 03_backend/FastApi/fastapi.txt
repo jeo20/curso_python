@@ -1,5 +1,9 @@
 instalar fastapi: pip install "fastapi[all]"
+
+crear un archivo llamado main.py
 iniciar el servidor en la carpeta adonde se instalo FastApi: uvicorn main:app --reload
+
+
 Documentación con Swagger: http://127.0.0.1:8000/docs
 Documentación con Redocly: http://127.0.0.1:8000/redoc
 
