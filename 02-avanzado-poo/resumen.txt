@@ -1,0 +1,43 @@
+
+00:00 - Introducción
+02:39 - Recomendación 
+
+---- LO BÁSICO DE POO ----
+
+02:59 - Conceptos de POO
+11:09 - Desventajas de NO usar POO
+14:59 - Clases y objetos
+24:06 - Atributos
+34:19 - Métodos
+39:39 - Ejercicios I
+
+---- ENTENDIENDO HERENCIA ----
+
+0:47:23 - Herencia
+1:00:14 - Herencia múltiple
+1:12:46 - MRO (Méthod Resolution Order)
+1:25:49 - Ejercicios II
+
+---- CONCEPTOS AVANZADOS ----
+
+1:31:19 - Polimorfismo
+1:48:46 - Encapsulamiento
+1:55:16 - Setters y Getters
+2:02:43 - Decoradores
+2:10:57 - Decorador @Property
+2:20:26 - Abstracción 
+2:25:30 - Clases abstractas
+2:39:12 - Métodos especiales (o dunder)
+2:50:02 - Ejercicios III
+
+---- PRINCIPIOS SOLID ----
+
+2:55:38 - Entendiendo SOLID
+3:00:47 - SRP (Single Responsibility Principle)
+3:13:57 - OCP (Open/Closed Principle)
+3:19:44 - LSP (Liskov's Substitution Principle)
+3:24:25 - ISP (Interface Segregation Principle)
+3:29:48 - DIP (Dependency Inversion Principle)
+3:40:12 - Ejercicio Final
+4:13:23 - Cierre del curso
+4:14:05 - Final
