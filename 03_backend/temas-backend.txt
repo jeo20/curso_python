@@ -1,0 +1,22 @@
+https://www.youtube.com/watch?v=_y9qQZXE24A
+
+00:00:00 | Introducción
+00:02:05 | 01 - ¿Qué es un backend?
+00:13:54 | 02 - API y FastAPI
+00:30:10 | 03 - Type Hints
+00:43:49 | 04 - Configuración FastAPI
+00:58:24 | 05 - Hola mundo
+01:29:42 | 06 - Operación GET
+01:38:45 | 07 - Peticiones HTTP
+01:41:39 | 08 - Creación API
+02:05:10 | 09 - Path y Query
+02:22:09 | 10 - Operaciones POST, PUT y DELETE
+03:04:32 | 11 - HTTP status codes
+03:27:55 | 12 - Routers
+03:46:58 | 13 - Recursos estáticos
+03:54:54 | 14 - Autorización OAuth2
+04:54:24 | 15 - OAuth2 JWT
+05:41:20 | 16 - MongoDB
+07:04:30 | 17 - MongoDB Atlas
+07:35:35 | 18 - Despliegue en Deta *
+07:54:44 | Próximos pasos

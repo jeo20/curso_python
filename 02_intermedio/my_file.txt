@@ -1,0 +1,6 @@
+Mi nombre es Jorge
+Mi apellido es Orellana
+45 años
+Y mi lenguaje preferido es Python
+Aunque también me gusta Cobol
+Y Visual Fox Pro
