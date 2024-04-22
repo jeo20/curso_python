@@ -1,0 +1,7 @@
+Crear Repositorio sin readme
+en la consola de visual studio git init (iniciar repositorio local)
+en la consola de visual studio git add . (agrego todos los archivos del repositorio local)
+en la consola de visual studio git commit -m "Commit inicial" (nombre del commit)
+en la consola de visual studio git branch -M main (cambio la rama a main que es la que se crea por defecto en gitlab)
+en la consola de visual studio git remote add origin https://gitlab.com/jeo2k1/proceso-liq.git (copiamos la direccion del repositorio web protocolo HTTPS)
+en la consola de visual studio git push -u origin main (subo los archivos del repositorio local, al repositorio web)
