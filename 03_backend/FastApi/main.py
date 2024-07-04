@@ -2,7 +2,6 @@ from fastapi import FastAPI # importando fastapi
 
 app = FastAPI() # creando instancia de FastAPI llamada app
 
-
 # Url local: http://127.0.0.1:8000
 @app.get("/") # decorador para definir la ruta y el metodo http que va a responder a esa ruta, en este caso es GET
 async def root(): # definicion de la ruta raiz, es decir, cuando se accede a http://localhost:8000/ (asincrona)
