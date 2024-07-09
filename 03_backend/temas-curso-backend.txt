@@ -1,11 +1,34 @@
 https://www.youtube.com/watch?v=_y9qQZXE24A
 
 00:00:00 | Introducción
+
 00:02:05 | 01 - ¿Qué es un backend?
+        El backend, también conocido como "el lado del servidor", es la parte de una aplicación web o sitio web 
+        que no es visible para el usuario final, pero que es esencial para su funcionamiento. 
+        El backend se encarga de tareas fundamentales como: Administrar bases de datos, 
+        Ejecutar la lógica empresarial, Gestionar la seguridad, Comunicarse con servidores
+        y Procesar datos.
+
 00:13:54 | 02 - API y FastAPI
+        API es la abreviatura en inglés de "Application Programming Interface" o "Interfaz de Programación de Aplicaciones".
+        Es un conjunto de funciones y protocolos que permiten que las aplicaciones de software se comuniquen entre sí 
+        para intercambiar datos, características y funcionalidades.
+
+        FastAPI es un web framework moderno y rápido (de alto rendimiento) para construir APIs con Python 
+        basado en las anotaciones de tipos estándar de Python.
+
 00:30:10 | 03 - Type Hints
+        Desde Python 3.6+ tiene soporte para "type hints" opcionales.
+        Estos type hints son una nueva sintaxis, desde Python 3.6+, que permite declarar el tipo de una variable.
+        Usando las declaraciones de tipos para tus variables, los editores y otras herramientas pueden proveerte 
+        un soporte mejor.
+
 00:43:49 | 04 - Configuración FastAPI
+            pip install "fastapi[all]" (instala fastapi y uvicorn para que funcione el servidor local)
+
 00:58:24 | 05 - Hola mundo
+            crear un archivo main.py
+
 01:29:42 | 06 - Operación GET
 01:38:45 | 07 - Peticiones HTTP
 01:41:39 | 08 - Creación API
