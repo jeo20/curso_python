@@ -25,21 +25,62 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
 
 00:43:49 | 04 - Configuración FastAPI
             pip install "fastapi[all]" (instala fastapi y uvicorn para que funcione el servidor local)
+            uvicorn (servidor incorporado en FastAPI)
+            uvicorn main:app --reload (iniciar el servidor en la carpeta adonde se instalo FastApi)
+                El comando uvicorn main:app se refiere a:
+                        main: el nombre del archivo main.py (el "módulo" de Python).
+                        app: el objeto creado dentro de main.py con la línea app = FastAPI().
+                        --reload: hace que el servidor se reinicie cada vez que cambia el código. Úsalo únicamente para desarrollo.
+            Detener el servidor "Ctrl + C"
 
 00:58:24 | 05 - Hola mundo
             crear un archivo main.py
+            Los métodos asíncronos terminan de ejecutarse inmediatamente, devolviendo el control al subproceso que realiza la llamada sin esperar una respuesta.
+            En Python, una función asíncrona es una función que se puede ejecutar sin bloquear el hilo principal del programa. Esto significa que el programa puede continuar ejecutando,
+            otras tareas mientras la función asíncrona se está completando. Las funciones asíncronas son particularmente útiles para tareas que toman mucho tiempo para completarse, 
+            como operaciones de red o E/S. Al usar funciones asíncronas, podemos evitar que el programa se bloquee mientras espera que estas tareas se completen, 
+            lo que mejora la capacidad de respuesta y el rendimiento general de la aplicación.
 
+            Documentacion Swagger:
+                http://127.0.0.1:8000/docs
+            
+            Documentacion ReDoc:
+                http://127.0.0.1:8000/redoc
+
+            
 01:29:42 | 06 - Operación GET
+                GET: Obtiene datos de un recurso específico.
+                Postman (cliente para ejecutar peticiones a un API)
+                Thunder Client (extension de VS Code, para ejecutar peticiones a un API)
+
 01:38:45 | 07 - Peticiones HTTP
+                POST: para crear datos.
+                GET: para leer datos.
+                PUT: para actualizar datos.
+                DELETE: para borrar datos.
+
 01:41:39 | 08 - Creación API
+                CRUD (Create: POST, Read: GET, Update: PUT, Delete: DELETE)
+                
+                
 02:05:10 | 09 - Path y Query
+
 02:22:09 | 10 - Operaciones POST, PUT y DELETE
+
 03:04:32 | 11 - HTTP status codes
+
 03:27:55 | 12 - Routers
+
 03:46:58 | 13 - Recursos estáticos
+
 03:54:54 | 14 - Autorización OAuth2
+
 04:54:24 | 15 - OAuth2 JWT
+
 05:41:20 | 16 - MongoDB
+
 07:04:30 | 17 - MongoDB Atlas
+
 07:35:35 | 18 - Despliegue en Deta *
+
 07:54:44 | Próximos pasos
