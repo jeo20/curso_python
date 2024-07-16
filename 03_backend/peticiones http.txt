@@ -1,7 +1,0 @@
-POST: para crear datos.
-
-GET: para leer datos.
-
-PUT: para actualizar datos.
-
-DELETE: para borrar datos.

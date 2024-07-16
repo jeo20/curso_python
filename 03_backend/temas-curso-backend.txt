@@ -61,7 +61,7 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
 
 01:41:39 | 08 - Creación API
                 CRUD (Create: POST, Read: GET, Update: PUT, Delete: DELETE)
-                
+                BaseModel
                 
 02:05:10 | 09 - Path y Query
 
