@@ -22,6 +22,8 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
         Estos type hints son una nueva sintaxis, desde Python 3.6+, que permite declarar el tipo de una variable.
         Usando las declaraciones de tipos para tus variables, los editores y otras herramientas pueden proveerte 
         un soporte mejor.
+        Pydantic es una libreria Python para llevar a cabo validación de datos.
+        https://fastapi.tiangolo.com/es/python-types/
 
 00:43:49 | 04 - Configuración FastAPI
             pip install "fastapi[all]" (instala fastapi y uvicorn para que funcione el servidor local)
@@ -40,6 +42,8 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
             otras tareas mientras la función asíncrona se está completando. Las funciones asíncronas son particularmente útiles para tareas que toman mucho tiempo para completarse, 
             como operaciones de red o E/S. Al usar funciones asíncronas, podemos evitar que el programa se bloquee mientras espera que estas tareas se completen, 
             lo que mejora la capacidad de respuesta y el rendimiento general de la aplicación.
+
+            https://fastapi.tiangolo.com/es/async/
 
             Documentacion Swagger:
                 http://127.0.0.1:8000/docs
@@ -65,22 +69,41 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
                 
 02:05:10 | 09 - Path y Query
 
+                Path: Puedes declarar los "parámetros" o "variables" con la misma sintaxis que usan los format strings de Python
+                https://fastapi.tiangolo.com/es/tutorial/path-params/
+
+                Query: El query es el conjunto de pares de key-value que van después del ? en la URL, separados por caracteres &.
+                Por ejemplo, en la URL: http://127.0.0.1:8000/items/?skip=0&limit=10
+                http://127.0.0.1:8000/userquery/?id=1
+
+                https://fastapi.tiangolo.com/es/tutorial/query-params/
+
+
 02:22:09 | 10 - Operaciones POST, PUT y DELETE
+
 
 03:04:32 | 11 - HTTP status codes
 
+
 03:27:55 | 12 - Routers
+
 
 03:46:58 | 13 - Recursos estáticos
 
+
 03:54:54 | 14 - Autorización OAuth2
+
 
 04:54:24 | 15 - OAuth2 JWT
 
+
 05:41:20 | 16 - MongoDB
+
 
 07:04:30 | 17 - MongoDB Atlas
 
+
 07:35:35 | 18 - Despliegue en Deta *
+
 
 07:54:44 | Próximos pasos
