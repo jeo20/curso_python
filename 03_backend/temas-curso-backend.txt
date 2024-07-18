@@ -70,16 +70,20 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
 02:05:10 | 09 - Path y Query
 
                 Path: Puedes declarar los "parámetros" o "variables" con la misma sintaxis que usan los format strings de Python
+                se usa para parametros fijos obligatorios.
                 https://fastapi.tiangolo.com/es/tutorial/path-params/
 
                 Query: El query es el conjunto de pares de key-value que van después del ? en la URL, separados por caracteres &.
-                Por ejemplo, en la URL: http://127.0.0.1:8000/items/?skip=0&limit=10
+                se usa para parametros que pueden ir o no. Por ejemplo, en la URL: http://127.0.0.1:8000/items/?skip=0&limit=10
                 http://127.0.0.1:8000/userquery/?id=1
 
                 https://fastapi.tiangolo.com/es/tutorial/query-params/
 
 
 02:22:09 | 10 - Operaciones POST, PUT y DELETE
+                POST: para crear datos.
+                PUT: para actualizar datos.
+                DELETE: para borrar datos.
 
 
 03:04:32 | 11 - HTTP status codes

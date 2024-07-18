@@ -42,10 +42,34 @@ async def user(id:int):  # Creamos un JSON con el id definido en path
 async def user(id:int):  # Creamos un JSON con el id definido en path
     return search_user(id)
     
+# Post Graba
+@app.post("/user/") # decorador de post en la ruta user
+async def user(user: User): # funcion user que recibe un usuario de la entidad User
+    if type(search_user(user.id)) == User: # compruebo si el usuario existe para no duplicarlo
+        return {"Error": "El usuario ya existe"}
+    else:
+        users_list.append(user) # si no existe lo agrego a la lista de usuarios
+        return user
+    
+# Put Actualiza
+@app.put("/user/")
+async def user(user: User): # funcion user que recibe un usuario de la entidad User
+    found = False # defino variable found inicializada en False
+    for index, saved_user in enumerate(users_list): # indexo el la lista para enumerar y saber la posicion del usuario
+        if saved_user.id == user.id: # si el id del usuario existe en la lista de
+            users_list[index] == user
+            found = True # si actualizo el usuario cambio found a True
+            
+    if not found:
+        return {"Error": "No se ha actualizado el usuario"} # mensaje error de excepcion
+    else:
+        return user
+            
 # Funcion que busca el id del usuario
 def search_user(id:int):
     users = filter(lambda user: user.id == id, users_list) # filtro para encontrar el id especifico con funcion lambda
     try:
         return list(users)[0] # devuelve el id buscado en el path
     except:
-        return {"Error": "Usuario no encontrado"} # mensaje error de excepcion 
+        return {"Error": "No se ha encontrado el usuario"} # mensaje error de excepcion
+    
