@@ -42,28 +42,38 @@ async def user(id:int):  # Creamos un JSON con el id definido en path
 async def user(id:int):  # Creamos un JSON con el id definido en path
     return search_user(id)
     
-# Post Graba
+# Post Graba POST http://127.0.0.1:8000/user
 @app.post("/user/") # decorador de post en la ruta user
 async def user(user: User): # funcion user que recibe un usuario de la entidad User
     if type(search_user(user.id)) == User: # compruebo si el usuario existe para no duplicarlo
-        return {"Error": "El usuario ya existe"}
-    else:
-        users_list.append(user) # si no existe lo agrego a la lista de usuarios
-        return user
+        return {"Error": "El usuario ya existe"}    
+    users_list.append(user) # si no existe lo agrego a la lista de usuarios
+    return user
     
-# Put Actualiza
+ 
+# Put Actualiza PUT http://127.0.0.1:8000/user/
 @app.put("/user/")
-async def user(user: User): # funcion user que recibe un usuario de la entidad User
-    found = False # defino variable found inicializada en False
-    for index, saved_user in enumerate(users_list): # indexo el la lista para enumerar y saber la posicion del usuario
-        if saved_user.id == user.id: # si el id del usuario existe en la lista de
-            users_list[index] == user
-            found = True # si actualizo el usuario cambio found a True
-            
+async def user(user: User):
+    found = False
+    for index, saved_user in enumerate(users_list):
+        if saved_user.id == user.id:
+            users_list[index] = user
+            found = True
     if not found:
-        return {"Error": "No se ha actualizado el usuario"} # mensaje error de excepcion
-    else:
-        return user
+        return {"error": "No se ha actualizado el usuario"}
+    return user
+    
+# Delete Elimina DELETE http://127.0.0.1:8000/user/4
+@app.delete("/user/{id}") # decorador de delete en la ruta user
+async def user(id:int):
+    found = False
+    for index, saved_user in enumerate(users_list): # indexo el la lista para enumerar y saber la posicion del usuario
+        if saved_user.id == id: # busca si el id del usuario existe en la lista
+            del users_list[index]
+            found = True # si actualizo el usuario cambio found a True            
+    if not found:
+        return {"Error": "No se ha eliminado el usuario"} # mensaje error si no puede eliminar el usuario
+
             
 # Funcion que busca el id del usuario
 def search_user(id:int):

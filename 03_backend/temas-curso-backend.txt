@@ -81,14 +81,21 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
 
 
 02:22:09 | 10 - Operaciones POST, PUT y DELETE
-                POST: para crear datos.
-                PUT: para actualizar datos.
-                DELETE: para borrar datos.
+                POST: para crear datos. POST http://127.0.0.1:8000/user
+                PUT: para actualizar datos. PUT http://127.0.0.1:8000/user/
+                DELETE: para borrar datos. DELETE http://127.0.0.1:8000/user/4
 
 
 03:04:32 | 11 - HTTP status codes
+                Las respuestas HTTP se agrupan en cinco clases:
+                Respuestas informativas (100–199)
+                Respuestas satisfactorias (200–299)
+                Redirecciones (300–399)
+                Errores de los clientes (400–499)
+                Errores de los servidores (500–599).
+                https://developer.mozilla.org/es/docs/Web/HTTP/Status
 
-
+                
 03:27:55 | 12 - Routers
 
 
