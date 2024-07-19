@@ -106,7 +106,7 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
                 tags=["products"] - para agrupar en la Documentacion
 
 03:46:58 | 13 - Recursos estáticos
-
+                Pueden ser imagenes, pdf, etc
 
 03:54:54 | 14 - Autorización OAuth2
 

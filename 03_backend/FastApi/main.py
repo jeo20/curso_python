@@ -1,11 +1,13 @@
 from fastapi import FastAPI  # importando fastapi
+from fastapi.staticfiles import StaticFiles  # importo para recursos estaticos
 from routers import products, users
 
 app = FastAPI() # creando instancia de FastAPI llamada app
 
-# Router
+# Routers
 app.include_router(products.router) # incluyendo el router de products en app
 app.include_router(users.router) # incluyendo el router de users en app
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Url local: http://127.0.0.1:8000
 @app.get("/") # decorador para definir la ruta y el metodo http que va a responder a esa ruta, en este caso es GET
