@@ -1,4 +1,4 @@
-from fastapi import FastAPI  # importando fastapi
+from fastapi import FastAPI, HTTPException  # importando fastapi
 from pydantic import \
     BaseModel  # importando la clase BaseModel de pydantic para crear nuestra propia clase
 
@@ -43,35 +43,35 @@ async def user(id:int):  # Creamos un JSON con el id definido en path
     return search_user(id)
     
 # Post Graba POST http://127.0.0.1:8000/user
-@app.post("/user/") # decorador de post en la ruta user
+@app.post("/user/", response_model=User, status_code=201) # decorador de post en la ruta user
 async def user(user: User): # funcion user que recibe un usuario de la entidad User
     if type(search_user(user.id)) == User: # compruebo si el usuario existe para no duplicarlo
-        return {"Error": "El usuario ya existe"}    
+        raise HTTPException(status_code=404, detail="El usuario ya existe")    
     users_list.append(user) # si no existe lo agrego a la lista de usuarios
     return user
     
  
 # Put Actualiza PUT http://127.0.0.1:8000/user/
-@app.put("/user/")
-async def user(user: User):
-    found = False
-    for index, saved_user in enumerate(users_list):
-        if saved_user.id == user.id:
-            users_list[index] = user
-            found = True
-    if not found:
-        return {"error": "No se ha actualizado el usuario"}
-    return user
+@app.put("/user/") # decorador de post en la ruta user
+async def user(user: User): # funcion user que recibe un usuario de la entidad User
+    found = False # creo la variable found y la inicializo como False
+    for index, saved_user in enumerate(users_list): # indexo el la lista para enumerar y saber la posicion del usuario en la lista
+        if saved_user.id == user.id: # busca si el id del usuario existe en la lista
+            users_list[index] = user # actualizo el usuario
+            found = True # si actualizo el usuario cambio found a True
+    if not found: # si found no es True muestra el mensaje de error
+        return {"error": "No se ha actualizado el usuario"} # mensaje error si no puede actualizar el usuario
+    return user # devuelvo el usuario actualizado
     
 # Delete Elimina DELETE http://127.0.0.1:8000/user/4
 @app.delete("/user/{id}") # decorador de delete en la ruta user
 async def user(id:int):
     found = False
-    for index, saved_user in enumerate(users_list): # indexo el la lista para enumerar y saber la posicion del usuario
+    for index, saved_user in enumerate(users_list): # indexo el la lista para enumerar y saber la posicion del usuario en la lista
         if saved_user.id == id: # busca si el id del usuario existe en la lista
-            del users_list[index]
-            found = True # si actualizo el usuario cambio found a True            
-    if not found:
+            del users_list[index] # elimino el usuario
+            found = True # si elimino el usuario cambio found a True            
+    if not found: # si found no es True muestra el mensaje de error
         return {"Error": "No se ha eliminado el usuario"} # mensaje error si no puede eliminar el usuario
 
             
