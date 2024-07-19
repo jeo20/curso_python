@@ -97,7 +97,13 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
 
                 
 03:27:55 | 12 - Routers
-
+                Su función principal es agrupar las operaciones de ruta (también conocidas como endpoints) que comparten características Comunicarse
+                se importa desde el main - from routers import products
+                se crea un objeto de tipo FastAPI - app = FastAPI()
+                se crea un objeto de tipo Router - app.include_router(products.router)
+                se agrega el objeto de tipo Router al objeto de tipo FastAPI
+                prefix="/products" - para usar internamente adentro de la api
+                tags=["products"] - para agrupar en la Documentacion
 
 03:46:58 | 13 - Recursos estáticos
 
