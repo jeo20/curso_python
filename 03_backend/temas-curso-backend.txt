@@ -120,6 +120,12 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
                 usuario del sistema
 
 04:54:24 | 15 - OAuth2 JWT
+                OAuth 2.0 es un estándar abierto que define cómo las aplicaciones pueden obtener acceso seguro a recursos de otras 
+                aplicaciones en nombre de un usuario. 
+                JWT es un formato de token compacto y ligero que se utiliza para transmitir información de autenticación entre aplicaciones.
+                https://jwt.io/introduction
+                https://bcrypt-generator.com/
+                https://jwt.io/
 
 
 05:41:20 | 16 - MongoDB

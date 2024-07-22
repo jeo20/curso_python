@@ -1,12 +1,20 @@
 from fastapi import FastAPI  # importando fastapi
 from fastapi.staticfiles import StaticFiles  # importo para recursos estaticos
-from routers import products, users
+from routers import basic_auth_users, jwt_auth_users, products, users
 
 app = FastAPI() # creando instancia de FastAPI llamada app
 
 # Routers
 app.include_router(products.router) # incluyendo el router de products en app
+
 app.include_router(users.router) # incluyendo el router de users en app
+
+app.include_router(basic_auth_users.router)
+
+app.include_router(jwt_auth_users.router)
+
+#app.include_router(users_db.router)
+
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Url local: http://127.0.0.1:8000
