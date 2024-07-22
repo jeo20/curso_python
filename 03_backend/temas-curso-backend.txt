@@ -109,7 +109,15 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
                 Pueden ser imagenes, pdf, etc
 
 03:54:54 | 14 - Autorización OAuth2
-
+                La autenticación es el acto de identificar a un usuario o un dispositivo.
+                La autorización es el acto de permitir o denegar a los usuarios y dispositivos los derechos de acceso.
+                OAuth 2.0, que significa "Open Authorization" (autorización abierta), es un estándar de autorización 
+                que permite que un sitio web o una aplicación acceda a recursos alojados por otras aplicaciones web 
+                en nombre de un usuario con un token.
+                from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+                OAuth2PasswordBearer: Es la clase que se encarga de la autenticación
+                OAuth2PasswordRequestForm: Es la forma de la que se va a enviar del cliente al backend para ver si es un
+                usuario del sistema
 
 04:54:24 | 15 - OAuth2 JWT
 
