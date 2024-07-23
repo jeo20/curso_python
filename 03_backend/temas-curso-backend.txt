@@ -159,7 +159,7 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
 
 
 07:04:30 | 17 - MongoDB Atlas
-
+                mongodb+srv://jeo2k1:Python2024@cluster0.euzcrke.mongodb.net/
 
 07:35:35 | 18 - Despliegue en Deta *
 
