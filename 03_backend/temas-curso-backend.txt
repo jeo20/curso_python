@@ -129,6 +129,11 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
 
 
 05:41:20 | 16 - MongoDB
+                MongoDB es una base de datos NoSQL orientada a documentos que apareció a mediados de la década de 2000
+                https://www.mongodb.com/try/download/community
+                https://fastdl.mongodb.org/tools/db/mongodb-database-tools-windows-x86_64-100.9.5.zip
+                Instalar localmente
+
 
 
 07:04:30 | 17 - MongoDB Atlas
