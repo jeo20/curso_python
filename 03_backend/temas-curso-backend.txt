@@ -129,11 +129,33 @@ https://www.youtube.com/watch?v=_y9qQZXE24A
 
 
 05:41:20 | 16 - MongoDB
-                MongoDB es una base de datos NoSQL orientada a documentos que apareció a mediados de la década de 2000
+                MongoDB es una base de datos NoSQL En lugar de almacenar datos en tablas como las bases de datos relacionales tradicionales,
+                MongoDB guarda los datos en documentos JSON. 
+                Esto significa que los datos se almacenan de una manera más flexible y estructurada, lo que la hace ideal para aplicaciones 
+                que manejan datos no estructurados o que cambian con el tiempo.
+                
+                Documentacion: https://www.mongodb.com/docs/atlas/
+                
                 https://www.mongodb.com/try/download/community
-                https://fastdl.mongodb.org/tools/db/mongodb-database-tools-windows-x86_64-100.9.5.zip
-                Instalar localmente
 
+                Instalar MongoDB localmente
+                
+                Tools
+                https://fastdl.mongodb.org/tools/db/mongodb-database-tools-windows-x86_64-100.9.5.zip
+                
+                Instalar Tools https://www.youtube.com/watch?v=C5WB0X8Udt8
+                
+                C:\Program Files\MongoDB\Server\7.0\tools\bin (tools)
+                agregar la ruta anterior a variables de entorno path
+                
+                https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/
+                
+                instalar extension vs code MongoDB
+
+                crear conexion (mongodb://localhost)
+
+                id 669fdaa340036dfbdb1a650b (pc mefi) usuario jorge
+                id 669fdeaa40036dfbdb1a650c (pc mefi) usuario eduardo
 
 
 07:04:30 | 17 - MongoDB Atlas

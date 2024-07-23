@@ -1,6 +1,6 @@
 from fastapi import FastAPI  # importando fastapi
 from fastapi.staticfiles import StaticFiles  # importo para recursos estaticos
-from routers import basic_auth_users, jwt_auth_users, products, users
+from routers import basic_auth_users, jwt_auth_users, products, users, users_db
 
 app = FastAPI() # creando instancia de FastAPI llamada app
 
@@ -8,6 +8,8 @@ app = FastAPI() # creando instancia de FastAPI llamada app
 app.include_router(products.router) # incluyendo el router de products en app
 
 app.include_router(users.router) # incluyendo el router de users en app
+
+app.include_router(users_db.router)
 
 app.include_router(basic_auth_users.router)
 
